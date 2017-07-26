@@ -2,18 +2,6 @@ References
 ---
 
 
-# Jekyll
-
-
-* [Setting up your GitHub Pages site locally with Jekyll](https://help.github.com/articles/setting-up-your-github-pages-site-locally-with-jekyll/)
-* [Install Jekyll on Ubuntu 14.04](http://michaelchelen.net/81fa/install-jekyll-2-ubuntu-14-04/)
-* [build-blog-jekyll-github-pages/](https://www.smashingmagazine.com/2014/08/build-blog-jekyll-github-pages/)
-
-## Jekyll's Themes
-
-* [themes](http://themes.jekyllrc.org/)
-* [jekyll-theme-basically-basic](https://github.com/mmistakes/jekyll-theme-basically-basic)
-
 
 
 # Templates
