@@ -1,131 +1,11 @@
-
-
-
-# Installing Jekyll on Ubuntu 14.04
-
-https://www.digitalocean.com/community/tutorials/how-to-set-up-a-jekyll-development-site-on-ubuntu-16-04
-
-```
-sudo apt-get update
-```
+Installing Jekyll on Ubuntu 14.04
+---
 
 
 ```
-$ sudo apt-get install ruby ruby-dev make gcc
-Reading package lists... Done
-Building dependency tree       
-Reading state information... Done
-gcc is already the newest version.
-make is already the newest version.
-make set to manually installed.
-The following extra packages will be installed:
-  libruby1.9.1 ruby1.9.1 ruby1.9.1-dev
-Suggested packages:
-  ri ruby1.9.1-examples ri1.9.1 ruby-switch
-The following NEW packages will be installed
-  libruby1.9.1 ruby ruby-dev ruby1.9.1 ruby1.9.1-dev
-0 to upgrade, 5 to newly install, 0 to remove and 495 not to upgrade.
-Need to get 3,567 kB of archives.
-After this operation, 16.9 MB of additional disk space will be used.
-Do you want to continue? [Y/n]
-
-
-```
-
-```
-$ sudo gem install jekyll bundler
-Fetching: public_suffix-2.0.5.gem (100%)
-ERROR:  Error installing jekyll:
-	public_suffix requires Ruby version >= 2.0.
-Fetching: bundler-1.15.3.gem (100%)
-Successfully installed bundler-1.15.3
-1 gem installed
-Installing ri documentation for bundler-1.15.3...
-Installing RDoc documentation for bundler-1.15.3...
-map479-admin@EEE-003124:~$
-
-```
-
-solving Ruby version >= 2.0. dependency:
-
-sudo apt-get purge  ruby ruby-dev
-```
-$ sudo apt-get install ruby2.0 ruby2.0-dev
-Reading package lists... Done
-Building dependency tree       
-Reading state information... Done
-The following extra packages will be installed:
-  libruby1.9.1 libruby2.0 ruby ruby1.9.1 rubygems-integration
-Suggested packages:
-  ri ruby-dev ruby1.9.1-examples ri1.9.1 ruby1.9.1-dev ruby-switch bundler
-The following NEW packages will be installed
-  libruby1.9.1 libruby2.0 ruby ruby1.9.1 ruby2.0 ruby2.0-dev
-  rubygems-integration
-0 to upgrade, 7 to newly install, 0 to remove and 495 not to upgrade.
-Need to get 3,784 kB/6,475 kB of archives.
-After this operation, 30.7 MB of additional disk space will be used.
-Do you want to continue? [Y/n]
-```
-
-
-sudo apt-get purge  ruby ruby-dev
-
-
 sudo apt-add-repository ppa:brightbox/ruby-ng
 sudo apt-get update
-
-
 ```
-$ sudo apt-get install ruby2.4
-Reading package lists... Done
-Building dependency tree       
-Reading state information... Done
-The following extra packages will be installed:
-  libruby2.4 rubygems-integration
-Suggested packages:
-  bundler
-The following NEW packages will be installed
-  libruby2.4 ruby2.4 rubygems-integration
-0 to upgrade, 3 to newly install, 0 to remove and 496 not to upgrade.
-Need to get 3,746 kB of archives.
-After this operation, 16.3 MB of additional disk space will be used.
-Do you want to continue? [Y/n] Y
-
-```
-
-
-```
-$ sudo gem install jekyll bundler
-Fetching: public_suffix-2.0.5.gem (100%)
-Successfully installed public_suffix-2.0.5
-Fetching: addressable-2.5.1.gem (100%)
-Successfully installed addressable-2.5.1
-Fetching: colorator-1.1.0.gem (100%)
-Successfully installed colorator-1.1.0
-Fetching: rb-fsevent-0.10.2.gem (100%)
-Successfully installed rb-fsevent-0.10.2
-Fetching: ffi-1.9.18.gem (100%)
-Building native extensions.  This could take a while...
-ERROR:  Error installing jekyll:
-	ERROR: Failed to build gem native extension.
-
-    current directory: /var/lib/gems/2.4.0/gems/ffi-1.9.18/ext/ffi_c
-/usr/bin/ruby2.4 -r ./siteconf20170727-6733-1y69u4j.rb extconf.rb
-mkmf.rb can't find header files for ruby at /usr/lib/ruby/include/ruby.h
-
-extconf failed, exit code 1
-
-Gem files will remain installed in /var/lib/gems/2.4.0/gems/ffi-1.9.18 for inspection.
-Results logged to /var/lib/gems/2.4.0/extensions/x86_64-linux/2.4.0/ffi-1.9.18/gem_make.out
-Fetching: bundler-1.15.3.gem (100%)
-Successfully installed bundler-1.15.3
-Parsing documentation for bundler-1.15.3
-Installing ri documentation for bundler-1.15.3
-Done installing documentation for bundler after 9 seconds
-1 gem installed
-
-```
-https://gist.github.com/johngerome/133b127c9f8545dccc54
 
 
 ```
@@ -236,3 +116,12 @@ Anywhere on eth0           ALLOW       169.254.0.0/16
 4000                       ALLOW       Anywhere
 4000 (v6)                  ALLOW       Anywhere (v6)
 ```
+
+
+
+# References
+
+* https://www.digitalocean.com/community/tutorials/how-to-set-up-a-jekyll-development-site-on-ubuntu-16-04
+* for ruby2.4-dev:  https://gist.github.com/johngerome/133b127c9f8545dccc54
+
+

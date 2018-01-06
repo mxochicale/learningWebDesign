@@ -2,11 +2,6 @@ Example
 ---
 
 
-# Sources
-
-[How to Set Up a Jekyll Development Site on Ubuntu 16.04](https://www.digitalocean.com/community/tutorials/how-to-set-up-a-jekyll-development-site-on-ubuntu-16-04)
-
-
 # Usage
 
 add export "GEM_HOME=$HOME/.gem" to your .bash_profile -- this solves sudo issue on Mac OS and other unix systems.
@@ -211,3 +206,12 @@ Your user account isn't allowed to install to the system RubyGems.
  export GEM_HOME=$HOME/.gem
  PATH=$PATH:$HOME/.gem/bin
  ```
+
+
+
+
+# Sources
+
+[How to Set Up a Jekyll Development Site on Ubuntu 16.04](https://www.digitalocean.com/community/tutorials/how-to-set-up-a-jekyll-development-site-on-ubuntu-16-04)
+
+
